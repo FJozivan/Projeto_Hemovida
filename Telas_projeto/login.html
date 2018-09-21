@@ -6,13 +6,42 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <style type="text/css">
-    </style>
+</style>
 </head>
-<body>
-    <div class="container-fluid" style="width: 500px; height: 500px; margin: 80px auto;">
+<body style="background-color: #182E47">
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img class="" style="width: 130px" src="hemovida.png"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">O Hemoce</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nós</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <div class="container" style="width: 500px; height: 500px; margin: 80px auto; background-color: #DBE0F3; border-radius: 10px">
         <div class="row">
-            <img src="../hemovida/resources/img/logo.png" style="width: 450px; height: 70px; margin: auto auto" />
-            <p class="col-sm-12" style="margin-top: 50px; text-align: center; font-size: 20px;"><strong>Login usuário:</strong></p>
+            <img class="mt-3" src="../hemovida/resources/img/logo.png" class="img-fluid" style="margin:auto; width: 60%" />
+            <p class="col-sm-12 col-sm-12" style="margin-top: 50px; text-align: center; font-size: 20px;"><strong>Login usuário:</strong></p>
             <div class="row col-sm-12" style="margin-top: 20px;">
                 <p class="col-sm-4">CPF:</p>
                 <input class="col-sm-8" type="text"  />
@@ -38,7 +67,55 @@
             <button class="btn btn-primary" style="margin-right: 60px; height: 40px; width: 100px;">Sair</button>
             <button class="btn btn-danger"  style="height: 40px; width: 100px;">Logar</button>
         </div>
+    </div> -->
+    <div class="container" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img class="mt-3 mb-5" src="../hemovida/resources/img/logo.png" class="img-fluid" style="margin:auto; width: 300px" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6" style="background-color: white; border-radius: 10px; box-shadow: 0px 0px 1px">
+
+                    <center><img class=" mb-3" src="icone.jpg" class="img-fluid" style="margin:auto; width: 100px; border-radius: 50px; margin-top: -40px; box-shadow: 0px 0px 1px" /></center>
+                    
+                    <div style="border-radius: 10px">
+                        <form action="/action_page.php" class="mt-3 mb-3 ml-5 mr-5">
+                          <div class="form-group">
+                            <label for="email">CPF:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Senha:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                      <div class="text-center">
+                        <div class="custom-control custom-radio custom-control-inline" style="padding-right: 10px;">
+                            <input type="radio" id="doador" name="acesso" class="custom-control-input">
+                            <label class="custom-control-label" for="doador">Doador</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline mb-3">
+                            <input type="radio" id="hemoce" name="acesso" class="custom-control-input">
+                            <label class="custom-control-label" for="hemoce">Hemoce</label>
+                        </div>    
+                    </div>
+
+                    <div class="mt-2 text-center">
+                        <button type="submit" class="btn btn-info mr-2">Entrar</button>
+                        <button type="submit" class="btn btn-secondary ml-2">Cancelar</button>
+                    </div>
+
+                </form>    
+            </div>
+
+        </div>
     </div>
+
+</div>
+</div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
