@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('cadastro_doador', 'doadorController@CadastroDoador');
+
+// Route::post('cadastrar_doador', 'doadorController@CadastrarDoador');
