@@ -14,6 +14,6 @@ class doadorController extends Controller
     }
 
     public function CadastrarDoador(Request $dados) {
-        return "Cheguei";
+        return $dados;
     }
 }
