@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('titulo')
-	{{"Cadastro do doador"}}
+	{{ $titulo }}
 @stop
 @section('cabecalho')
 	@extends('layouts.cabecalho')
@@ -26,7 +26,8 @@
 				<div class="row">
 					<div class="container">
 						<div class="col-lg-12 mb-3">
-							<form method="" action="">
+							<form method="POST" action="cadastrar_doador">
+								{{ csrf_field() }}
 								<div class="container font">
 									<div class="col-lg-12 col-sm-12">
 										<p style="margin-left: -25px;">IDENTIFICAÇÃO</p>

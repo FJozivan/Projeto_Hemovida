@@ -9,12 +9,11 @@ class doadorController extends Controller
     //
 
     public function CadastroDoador() {
-        return view('cadastro_doador');
+        $titulo = "Cadastro do doador";
+        return view('cadastro_doador', compact('titulo'));
     }
 
-    /*
-    public function CadastrarDoador() {
-
+    public function CadastrarDoador(Request $dados) {
+        return "Cheguei";
     }
-    */
 }
